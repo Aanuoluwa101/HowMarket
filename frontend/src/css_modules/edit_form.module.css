@@ -1,0 +1,57 @@
+.error-message {
+    color: red;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .product-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #E6DBAC;
+    padding: 0 1rem;
+    padding-bottom: .3rem;
+    border-radius: 5px;
+  }
+  
+  .product-form label {
+    font-weight: bold;
+    margin-bottom: .1rem;
+  }
+  
+  .product-form input {
+    padding: .2rem .5rem;
+    margin-bottom: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+
+  }
+ 
+  .product-form .buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .product-form .save,
+  .product-form .cancel {
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: .2rem .5rem;
+  }
+
+  .product-form .save {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: .2rem .5rem;
+  }
+  
+  .product-form .cancel {
+    background-color: #8e9294;
+    margin-right: .5rem;
+  }

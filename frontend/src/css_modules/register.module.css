@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .register-button,
+  .login-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .login,
+  .register {
+    text-align: center;
+    color: #1560BD;
+    cursor: pointer;
+  }
+
+.form .login-prompt,
+.form .register-prompt {
+    text-align: center;
+    margin-top: .5rem;
+}

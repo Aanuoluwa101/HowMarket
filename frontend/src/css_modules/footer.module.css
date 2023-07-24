@@ -1,0 +1,98 @@
+footer {
+    color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 150px;
+    max-height: 200px;
+    background: #00563F;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #f0f0f0
+}
+footer span {
+    display: block;
+}
+
+
+footer .logo-container {
+    width: 20%;
+    height: 55%;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-left: 15px;
+}
+
+footer .logo-container img {
+    height: 50%;
+}
+
+footer .logo-container span {
+    font-size: .7em;
+    margin-left: -6px;
+}
+
+
+footer .others {
+    display: flex;
+    padding: 10px;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+
+.about-dev {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 3rem;
+    align-items: flex-start;
+    max-width: 150px;
+    margin-right: 0;
+}
+
+footer .links {
+    height: 70%;
+    display: flex;
+    max-width: 30%;
+}
+
+footer .about-dev .links img {
+    display: block;
+    width: 20px;
+    border-radius: 3px;
+}
+
+.title {
+    margin-bottom: .1rem;
+    font-weight: 700;
+}
+
+footer .links .git {
+    margin-right: .2rem;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+    font-size: .8em;
+}
+
+footer li {
+    margin-bottom: .2rem;
+}
+
+.copyright {
+    text-align: center;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: -10px;
+}

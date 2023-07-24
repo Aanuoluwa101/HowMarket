@@ -1,0 +1,225 @@
+body {
+    background-color: #d4e5d3;
+    margin: 0;
+}
+
+.hero {
+    padding: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    margin-bottom: .5rem;
+    margin-top: 70px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.hero img {
+    display: block;
+    margin-right: 1 rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    width: 30%;
+    padding-top: 0;
+}
+
+h1 {
+    font-family: 'Lora', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    padding-top: .5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: start;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 0;
+    text-align: left;
+}
+
+.text .sign-up,
+.text .sign-in {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.sign-up {
+    margin-right: 1rem;
+}
+
+
+.features {
+    display: flex;
+    margin: 0 auto;
+    background-color: #d4e5d3;
+    padding: 1rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.feature {
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #bfbdc1;
+    width: 200px;
+    height: 210px;
+    padding-top: .5rem;
+    margin-left: 1rem;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.feature img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+p {
+    margin-top: 0;
+    font-family: 'Lora', sans-serif;
+    font-size: .9em;
+    font-weight: 500;
+}
+.feature-description {
+    text-align: center;
+}
+
+
+.openClose p {
+    margin-top: 2.5rem;
+   
+}
+
+.market p,
+.create p {
+    margin-top: .8rem;
+}
+
+.store p {
+    margin-top: .6rem;
+}
+
+.record p {
+    margin-top: 1.5rem;
+}
+
+.view p {
+    margin-top: 3.2rem;
+}
+
+.openClose img {
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.record img {
+    margin-top: 1.2rem;
+}
+
+.view img {
+    margin-top: 2rem;
+}
+
+/* ABOUT */
+.about {
+    /* background: #bfbdc1; */
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 1rem auto;
+    padding: 2rem;
+    border: 1px solid #bfbdc1;
+    background: white;
+    /* padding-right: 0; */
+}
+
+.about .image {
+    width: 40%;
+}
+
+.about .text {
+    /* background: purple; */
+    margin-right: 0;
+    width: 50%;
+}
+.about .text p {
+    /* background: orange; */
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+    font-size: .9em;
+    line-height: 23px;
+}
+
+.about .image img {
+    max-width: 100%;
+}
+
+.connect-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about .text p a {
+    display: inline;
+    color: blue;
+    padding-left: 0;
+}
+
+.connect-links {
+    /* background: pink; */
+    display: flex   ;
+}
+
+.connect-links a {
+    display: block;
+    width: 5%;
+    padding: 0;
+    /* background: red; */
+    margin-top: 0;
+}
+
+.connect-links .git {
+    margin: 0 3px;
+   
+}
+
+.connect-links img {
+    max-width: 100%;    
+    display: block;
+    border: 1px solid #6d6c6c;
+    border-radius: 5px;
+}
+

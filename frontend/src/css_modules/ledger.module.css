@@ -1,0 +1,158 @@
+.ledger { 
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 2px solid #7777;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    background-color: #E6DBAC; 
+    align-items: stretch;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0rem;
+    padding-left: .7rem;
+    align-self: flex-start;
+    font-size: 1.5em;
+}
+
+span {
+    display: block;
+}
+
+ .details {
+    display: flex;
+    padding: .5rem;
+    padding-left: .8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: .5rem;
+    align-items: center;
+    flex: 1;
+}
+
+
+.details .total {
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+    margin-left: 1.5rem;
+    text-align: center;
+    font-size: 2.5em;
+    flex: 1;
+
+}
+
+.details .time {
+    width: 40%;
+    font-family: 'Lora', sans-serif;
+    font-weight: 500;
+}
+
+.details .time .label {
+    font-size: 1.5em;
+}
+
+.details .time .value {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.details .time .close {
+    margin-top: 1rem;
+}
+
+ button {
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  border-radius: 5px;
+  font-family: 'Lora', sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-right: .7rem;
+  align-self: flex-end;
+}
+
+
+
+/* SALE DETAILS */
+.ledger-details {
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 0.3s;
+    border-radius: 5px;
+  }
+
+.ledger-details .heading{
+    text-align: center;
+    font-weight: 500;
+}
+  
+
+  .sales-details-total {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    font-size: 1.2em;
+  }
+
+  .sales-details-total-label {
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  
+  .hide-button {
+    margin-top: 20px;
+  }
+  
+  .hide-button button {
+    background-color: #ddd;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  /* TABLE */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  thead th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #e5e5e5;
+  }
+  
+  
+  
+
