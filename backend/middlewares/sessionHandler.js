@@ -2,6 +2,7 @@ const dotenv = require("dotenv").config()
 const session = require('express-session')
 const MongoStore = require('connect-mongo') 
 const connectionString = process.env.CONNECTION_STRING
+const secret = process.env.SECRET
 
 
 const sessionStore = MongoStore.create({
@@ -10,7 +11,7 @@ const sessionStore = MongoStore.create({
 })
 
 const sessionOptions = {
-    secret: 'la-bush',
+    secret: secret,
     cookie: { maxAge: 600000, httpOnly: true, signed: true },
     resave: false,
     saveUninitialized: false,
