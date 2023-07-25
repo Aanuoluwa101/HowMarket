@@ -14,8 +14,8 @@ app.use(cors({
   origin: client,
 }));
 
-app.use(cookieParser());
 app.use(sessionHandler)
+app.use(cookieParser());
 app.use(express.json());
 app.use('/', require("./routes/ledgerRoutes"));
 app.use('/', require("./routes/productRoutes"));
