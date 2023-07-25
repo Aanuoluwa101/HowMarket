@@ -72,7 +72,7 @@ render() {
   handleSaleSave = async() => {
     this.setState({selling: false, total: this.props.aggregate});
 
-    const url = "http://localhost:5000/ledgers/" + this.props.ledgerId;
+    const url = "https://howmarket-api.onrender.com/ledgers/" + this.props.ledgerId;
     const body = { total: this.state.total - this.props.aggregate,
                    count: this.state.count,
                    productId: this.props.product.id

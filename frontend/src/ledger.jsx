@@ -66,7 +66,7 @@ class Ledger extends Component {
   }
 
   componentDidMount = async () => {
-    const url = "http://localhost:5000/ledgers/" + this.props.ledger.id
+    const url = "https://howmarket-api.onrender.com/ledgers/" + this.props.ledger.id
     try {
       const response = await fetch(url, { credentials: "include" });
       const sales = await response.json();

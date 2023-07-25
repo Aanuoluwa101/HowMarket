@@ -73,7 +73,7 @@ class Store extends Component {
   
     getSessionInfo = async () => {
         try {
-            const response = await fetch("http://localhost:5000/users/session", {credentials: "include"});
+            const response = await fetch("https://howmarket-api.onrender.com/users/session", {credentials: "include"});
             const data = await response.json();
             console.log("data: ", data);
  
@@ -88,7 +88,7 @@ class Store extends Component {
 
 
     closeLedger = async() => {
-        const url = "http://localhost:5000/ledgers/" + this.state.sessionInfo.ledger.id
+        const url = "https://howmarket-api.onrender.com/ledgers/" + this.state.sessionInfo.ledger.id
         try {
           const response = await fetch(url, {
             method: 'PUT',
@@ -102,7 +102,7 @@ class Store extends Component {
     
     openLedger = async () => {
       try {
-          const response = await fetch("http://localhost:5000/ledgers", {method: 'POST', credentials: 'include'});
+          const response = await fetch("https://howmarket-api.onrender.com/ledgers", {method: 'POST', credentials: 'include'});
           if (!response.ok) {
             const errorData = await response.json()
             throw new Error(errorData.message);

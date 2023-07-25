@@ -42,7 +42,7 @@ class Ledgers extends Component {
   
   componentDidMount = async () => {
     try {
-    const response = await fetch("http://localhost:5000/ledgers", { credentials: "include" });
+    const response = await fetch("https://howmarket-api.onrender.com/ledgers", { credentials: "include" });
     if (response.ok){
       const data = await response.json();
       this.setState({ ledgers: data });

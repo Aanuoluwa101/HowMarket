@@ -38,19 +38,19 @@ class Market extends Component {
 
     componentDidMount = async() => {
         try {
-            var response = await fetch('http://localhost:5000/users/login_status', {
+            var response = await fetch('https://howmarket-api.onrender.com/users/login_status', {
                 credentials: "include"
             });
             var data = await response.json();
             this.setState({ isLoggedIn: data.isLoggedIn });
             
-            response = await fetch('http://localhost:5000/market', {
+            response = await fetch('https://howmarket-api.onrender.com/market', {
                 credentials: "include"
             });
             data = await response.json();
             this.setState({ products: data });
 
-            response = await fetch('http://localhost:5000/store/inventory', {
+            response = await fetch('https://howmarket-api.onrender.com/store/inventory', {
                 credentials: "include"
             })
             data = await response.json();

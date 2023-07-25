@@ -12,7 +12,7 @@ class ProductCreationForm extends React.Component {
   
   handleSave = async(event) => {
     event.preventDefault();
-    const url = "http://localhost:5000/products/"
+    const url = "https://howmarket-api.onrender.com/products/"
     try {
         const response = await fetch(url, {
           method: 'POST',

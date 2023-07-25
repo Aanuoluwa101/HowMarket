@@ -55,7 +55,7 @@ class SiteHeader extends Component {
         credentials: "include"
       };
         try {
-            const response = await fetch('http://localhost:5000/users/logout', requestOptions)
+            const response = await fetch('https://howmarket-api.onrender.com/users/logout', requestOptions)
             if (!response.ok) {
                 const errorData = await response.json();
                 throw new Error(errorData.message);

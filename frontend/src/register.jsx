@@ -70,7 +70,7 @@ class Register extends Component{
           };
 
           try {
-            const response = await fetch('http://localhost:5000/users/register', requestOptions);
+            const response = await fetch('https://howmarket-api.onrender.com/users/register', requestOptions);
             if (!response.ok) {
                 const errorData = await response.json();
                 throw new Error(errorData.message);

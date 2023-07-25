@@ -109,7 +109,7 @@ class LandingPage extends Component {
 
     componentDidMount = async() => {
         try {
-            const response = await fetch('http://localhost:5000/users/login_status', {
+            const response = await fetch('https://howmarket-api.onrender.com/users/login_status', {
                 credentials: "include"
             })
             const data = await response.json();
