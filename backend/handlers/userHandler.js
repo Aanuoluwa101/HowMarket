@@ -92,6 +92,8 @@ const sessionInfo = asyncHandler(async (req, res) => {
     const storeId = req.session.storeId;
     const result = { "store": null, "ledger": {}, products: [] }
 
+    console.log("session id: ", req.session.id)
+    console.log("attached store: ", req.session.storeId)
     if (!storeId) {
         res.status(200).json(result)
         return;
