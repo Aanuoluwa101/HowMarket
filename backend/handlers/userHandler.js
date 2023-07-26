@@ -89,6 +89,9 @@ const loginUser = asyncHandler(async (req, res) => {
 
 const sessionInfo = asyncHandler(async (req, res) => {
     //Returns details of the current session based on the store attached to the session
+    if (!req.session) {
+        res.status(200).json({"message": "no session object sent with request"})
+    }
     const storeId = req.session.storeId;
     const result = { "store": null, "ledger": {}, products: [] }
 
