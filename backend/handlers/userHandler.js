@@ -93,7 +93,7 @@ const sessionInfo = asyncHandler(async (req, res) => {
     const result = { "store": null, "ledger": {}, products: [] }
 
     if (!storeId) {
-        res.status(200).json({ "session_id": req.session.storeId })
+        res.status(200).json({ "session_id": req.session.id })
         return;
     }
 
